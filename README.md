@@ -1,22 +1,43 @@
-# Time-Series
-Time_Series_1 notebook performs a time series analysis on Google Trends data for the search terms 'Diet', 'Gym', and 'Finance'. The analysis includes:
+**📊 Time Series Analysis Project**
+This project explores time series analysis techniques using two separate datasets:
 
-Loading and preparing the data, including converting the 'Month' column to datetime objects and setting it as the index.
-Visualizing the trends and seasonality of each search term using plots and rolling means.
-Applying ARIMA and SARIMAX models to understand the time series components and prepare for potential forecasting.
-Analyzing the autocorrelation (ACF) and partial autocorrelation (PACF) plots to help identify appropriate model parameters.
-The overall goal is to understand the historical patterns and potentially forecast future search interest for these topics.
+**🔹 Time_Series_1: Google Trends Analysis**
+This notebook analyzes monthly Google Trends data for the search terms "Diet", "Gym", and "Finance" to uncover patterns in public interest.
 
-Time_Series_2 notebook performs an exploratory data analysis on the PJME hourly energy consumption dataset.
+**Key Steps:**
+Data Preparation: Converts the 'Month' column to datetime format and sets it as the index.
 
- The analysis includes:
+Visualization: Plots trends, rolling means, and seasonal patterns for each search term.
 
-Loading Libraries and Data: Essential libraries like pandas, numpy, matplotlib, and seaborn are imported, and the dataset is loaded into a pandas DataFrame.
-Data Inspection and Cleaning: The data types are checked, and the 'Datetime' column is converted to the correct datetime format. The 'Datetime' column is then set as the index for easier time series analysis.
-Time Series Plot: An initial plot of the energy consumption over time is generated to visualize the overall trend and patterns.
-Feature Engineering: New features like year, month, week, day, hour, day of the week (string and numerical), and year-month are extracted from the 'Datetime' index.
-Seasonal Plots: Plots are generated to analyze the seasonality of energy consumption at monthly, weekly, and daily levels.
-Outlier Detection: A boxplot is used to visualize the distribution of energy consumption and identify potential outliers.
-Time Series Decomposition: The time series data is decomposed into its trend, seasonal, and residual components using both additive and multiplicative models to better understand the underlying patterns.
-Conclusions: Based on the visualizations, conclusions are drawn about the trends, seasonality, and outliers in the energy consumption data.
-Time_Series_2 provides a good starting point for understanding the characteristics of the PJME hourly energy consumption data before proceeding to more advanced time series analysis or modeling.
+Modeling: Applies ARIMA and SARIMAX models to understand components and forecast trends.
+
+Diagnostics: Uses Autocorrelation (ACF) and Partial Autocorrelation (PACF) plots to guide model selection.
+
+Objective: Identify historical trends and develop insights for future forecasting.
+
+**🔹 Time_Series_2: PJME Energy Consumption EDA**
+This notebook performs an exploratory data analysis on the PJME hourly energy consumption dataset.
+
+**Key Steps:**
+Data Loading & Cleaning: Reads the dataset, converts the 'Datetime' column, and sets it as the index.
+
+Visualization: Plots overall consumption trends and seasonal variations (daily, weekly, monthly).
+
+Feature Engineering: Extracts time-based features like year, month, day, hour, etc.
+
+Outlier Detection: Uses boxplots to spot irregular consumption values.
+
+Time Series Decomposition: Breaks down the data into trend, seasonal, and residual components using both additive and multiplicative models.
+
+Insights: Draws conclusions on consumption behavior and seasonality.
+
+**📌 Purpose**
+This project demonstrates how to work with time series data through:
+
+Trend and seasonality detection
+
+Forecasting preparation
+
+Exploratory time-based feature extraction
+
+It serves as a foundation for deeper forecasting models and energy/data consumption predictions.
